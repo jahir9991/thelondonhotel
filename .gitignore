@@ -1,4 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
+
 
 .idea/
 node_modules/
@@ -6,3 +6,5 @@ node_modules/
 .c9/
 
 
+mongod-start
+/data
