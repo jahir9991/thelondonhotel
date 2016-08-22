@@ -8,9 +8,25 @@ router.get('/', function (req, res, next) {
 });
 router.get('/create', function (req, res, next) {
     var vm = {
-        title: "create user"
+        title: "create user",
+        input: {},
+        error: "no"
     }
     res.render('users/create', vm);
 });
+router.post('/create', function (req, res, next) {
+    var somthingGoesWrong = true;
+    if (somthingGoesWrong) {
+        var vm = {
+            title: "create an account",
+            input: req.body,
+            error: "something wrong"
+        }
+        delete vm.input.password;
+        return res.render('users/create', vm);
+    }
+    res.render('/orders');
+});
+
 
 module.exports = router;

@@ -9,30 +9,35 @@
         only difficult part is choosing. (Sorry, we can't help you with that.)</p>
 </div>
 <div class="widget">
+
     <form name="create-user-form" id="create-user-form" method="post">
         <div class="form-group">
             <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName"/>
+            <input type="text" id="firstName" name="firstName" value="<%= input.firstName %>"/>
         </div>
         <div class="form-group">
             <label for="lastName">Last name</label>
-            <input type="text" id="lastName" name="lastName"/>
+            <input type="text" id="lastName" name="lastName" value="<%= input.lastName %>"/>
         </div>
         <div class="form-group">
             <label for="roomNumber">Room number</label>
-            <input type="text" id="roomNumber" name="roomNumber"/>
+            <input type="text" id="roomNumber" name="roomNumber" value="<%= input.roomNumber %>"/>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email"/>
+            <input type="email" id="email" name="email" value="<%= input.email %>"/>
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" autocomplete="off"/>
+            <input type="password" id="password" name="password" autocomplete="off" value="<%= input.password %>"/>
         </div>
         <div class="form-submit">
             <input type="submit" value="Create my account"/>
         </div>
+
+
+        <span class="error"><%= error %> </span>
+
     </form>
 </div>
 

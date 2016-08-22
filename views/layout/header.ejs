@@ -9,7 +9,7 @@
         | The Landon Hotel</title>
     <meta name="description"
           content="No matter what you're craving, Restaurant to Room has you covered. Our fast and friendly delivery service brings you hot, fresh food, from a diverse choice of local restaurants."/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/wp-backgrounds.css" type='text/css' media='all'/>
     <link rel='stylesheet' href="/stylesheets/mjCont.css" type='text/css' media='all'/>
     <link rel='stylesheet' href='/stylesheets/front.css' type='text/css' media='all'/>
@@ -33,9 +33,10 @@
                                                    class="header-image" width="960" height="85" alt=""/></a>
 
     </header>
-    <% if(firstName){ %>
+    <% if (firstName){ %>
     <div id="greeting" class="right">
-
+        <strong>hi <%= firstName %></strong>
+        <a href="/users/logout">Logout</a>
     </div>
     <% } %>
     <div id="main" class="wrapper">
