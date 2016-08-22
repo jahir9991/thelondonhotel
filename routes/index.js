@@ -6,6 +6,7 @@ router.get('/', function (req, res, next) {
     var vm = {
         title: 'Home',
         firstName: ""
+
     }
     res.render('index', vm);
 });
