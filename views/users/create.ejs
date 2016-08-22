@@ -10,7 +10,7 @@
 </div>
 <div class="widget">
 
-    <form name="create-user-form" id="create-user-form" method="post">
+    <form name="create-user-form" id="create-user-form" method="post" novalidate>
         <div class="form-group">
             <label for="firstName">First name</label>
             <input type="text" id="firstName" name="firstName" value="<%= input.firstName %>"/>
@@ -21,7 +21,7 @@
         </div>
         <div class="form-group">
             <label for="roomNumber">Room number</label>
-            <input type="text" id="roomNumber" name="roomNumber" value="<%= input.roomNumber %>"/>
+            <input type="number" id="roomNumber" name="roomNumber" value="<%= input.roomNumber %>"/>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
