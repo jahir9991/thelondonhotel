@@ -9,3 +9,4 @@ node_modules/
 
 mongod-start
 /data
+bower_components

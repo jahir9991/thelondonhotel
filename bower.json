@@ -1,0 +1,17 @@
+{
+  "name": "TheLondonHotel",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/jahir9991/thelondonhotel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
